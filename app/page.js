@@ -1,7 +1,8 @@
+"use client"
 import React, { useReducer } from "react"
 
 export default function Home() {
-  const [taskstate,dispatch] = useReducer(reducer , {count :0})
+  const [taskState,dispatch] = useReducer(reducer , {count :0})
   function reducer(state,action){
     switch(action.type){
       case "add":
